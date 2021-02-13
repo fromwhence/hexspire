@@ -238,6 +238,7 @@ favoriteColors.addEventListener('click', function (event) {
     hexFavoritesArr = Array.from(document.querySelectorAll('.favorite--color'));
     if (hexFavoritesArr.length < 1) {
       deleteFavoritesIcon.classList.remove('active');
+      resetIcons();
     }
   }
 });
