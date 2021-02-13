@@ -219,9 +219,6 @@ favoriteColors.addEventListener('click', function (event) {
     const hexText = event.target;
     const hexTextMatch = hexText.style.background;
     // Resets favorite icon, clipboard icon, and remove all if no favorites remain
-    if (document.querySelector('.favorite-colors').firstChild === null) {
-      resetIcons();
-    }
     const hexMatches = Array.from(
       document.querySelectorAll('.my--color.selected')
     );
@@ -236,9 +233,10 @@ favoriteColors.addEventListener('click', function (event) {
     }
 
     hexFavoritesArr = Array.from(document.querySelectorAll('.favorite--color'));
+    console.log('Favorites list');
     if (hexFavoritesArr.length < 1) {
-      deleteFavoritesIcon.classList.remove('active');
       resetIcons();
+      deleteFavoritesIcon.classList.remove('active');
     }
   }
 });

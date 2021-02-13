@@ -309,7 +309,7 @@ a:active {
 
 .delete-favorites.active:hover,
 .delete-favorites.active:focus {
-  color: rgb(255, 125, 125);
+  color: rgb(255, 155, 155);
 }
 
 /* Favorites bar */
