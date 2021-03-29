@@ -154,11 +154,15 @@ a:active {
 
 .modal-window ul {
   list-style-position: inside;
-  list-style-type: '■ ';
+  list-style-type: disc;
   background-color: white;
   padding: 1.5rem;
   border: 1px solid #77899b;
   border-radius: 0.4rem;
+}
+
+li::marker {
+  color: #77899b;
 }
 
 .modal-window li {
