@@ -1,6 +1,5 @@
 'use strict';
 
-const urlBase = 'https://api.noopschallenge.com/hexbot?count=';
 const colorGrid = document.getElementById('color-grid');
 const stickyToolbar = document.querySelector('.favorite-colors-container');
 const favoriteIcon = document.querySelector('.favorite-icon');
